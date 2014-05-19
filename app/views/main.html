@@ -16,21 +16,18 @@
   <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+<div ng-controller="ProductListCtrl" class="row productviews">
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <ul ng-repeat="product in products">
+    <li><h4>{{product.name}}</h4></li>
+    <li><img ng-src="{{product.thumb}}"></img></li>
+    <li><p>{{product.snippet}}</p></li>
+  </ul>
 </div>
 
+
+
 <div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+  <p><span class="glyphicon glyphicon-heart"></span> By Brooke Casey</p>
 </div>

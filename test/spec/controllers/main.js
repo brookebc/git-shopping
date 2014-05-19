@@ -20,3 +20,14 @@ describe('Controller: MainCtrl', function () {
     expect(scope.awesomeThings.length).toBe(3);
   });
 });
+
+describe('ProductListCtrl', function(){
+
+  it('should create "products" model with 3 products', function() {
+    var scope = {},
+        ctrl = new ProductListCtrl(scope);
+
+    expect(scope.products.length).toBe(3);
+  });
+
+});
