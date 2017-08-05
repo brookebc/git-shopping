@@ -1,0 +1,9 @@
+<!-- //this is where you will be able to see the product detail page -->
+
+<section>
+	<h1>{{product.name}}</h1>
+	<p>{{product.price}}</p>
+	<p>{{product.large}}</p>
+	<p>{{product.description}}</p>
+	<a href="#/prod/{{product._id}}/edit">Edit</a> | <a ng-click="delete()">Delete</a>
+</section>

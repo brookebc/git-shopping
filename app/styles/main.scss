@@ -14,7 +14,14 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     list-style-type: none;
 }
 
+.shoppingcart {
+    min-height: 150px;
+    background-color: #ffffff;
+}
 
+.hide {
+    display:none;
+}
 
 .browsehappy {
     margin: 0.2em 0;
